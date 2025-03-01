@@ -21,6 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    const ctaButton = document.querySelector('.cta-button');
+    
+    ctaButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Thank you for your interest! You will be redirected to the join page.');
+        window.location.href = 'join.html';
+    });
 });
 
 // Initialize Flatpickr for date and time selection
