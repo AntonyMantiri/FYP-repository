@@ -29,6 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Thank you for your interest! You will be redirected to the join page.');
         window.location.href = 'join.html';
     });
+
+    // Handle form submission
+    const joinForm = document.getElementById('join-form');
+    joinForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Thank you for joining our community!');
+        // Here I will add later code to handle form submission, e.g., sending data to a server
+    });
 });
 
 // Initialize Flatpickr for date and time selection
